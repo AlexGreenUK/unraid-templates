@@ -40,12 +40,12 @@ Many supported registries&#xD;
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1672960349</DateInstalled>
+  <DateInstalled>1672960618</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
   <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="Data" Target="/store" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Data" Target="/store" Default="/mnt/user/appdata/whats-up-docker" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/whats-up-docker</Config>
   <Config Name="MQTT Server" Target="WUD_TRIGGER_MQTT_mqtt_URL" Default="" Mode="" Description="Example: mqtt://127.0.0.1:1883" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTT Username" Target="WUD_TRIGGER_MQTT_mqtt_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="MQTT Password" Target="WUD_TRIGGER_MQTT_mqtt_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
