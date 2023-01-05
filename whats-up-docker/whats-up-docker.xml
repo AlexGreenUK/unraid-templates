@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>whats-up-docker</Name>
+  <Repository>fmartinou/whats-up-docker</Repository>
+  <Registry>https://hub.docker.com/r/fmartinou/whats-up-docker</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://forums.unraid.net/topic/133313-support-alexgreenuk-unraid-docker-templates/</Support>
+  <Project>https://github.com/fmartinou/whats-up-docker</Project>
+  <Overview>What's up Docker? (aka WUD) WEBUI Included&#xD;
+Gets you notified when new versions of your Docker containers are available and lets you react the way you want.&#xD;
+&#xD;
+Depending what you want to do you might have to add your own variables. By default I have included MQTT.&#xD;
+&#xD;
+Good Integration With&#xD;
+&#xD;
+- Home-Assistant&#xD;
+- Prometheus&#xD;
+- Grafana&#xD;
+&#xD;
+Many Supported Triggers&#xD;
+&#xD;
+Send notifications using Smtp, Apprise, IFTTT, Slack, Pushover...&#xD;
+Automatically update your docker containers or your docker-compose stack.&#xD;
+Integrate with third-party systems using Kafka, Mqtt, Http Webhooks...&#xD;
+&#xD;
+Many supported registries&#xD;
+&#xD;
+- Azure Container Registry&#xD;
+- AWS Elastic Container Registry&#xD;
+- Google Container Registry&#xD;
+- Github Container Registry&#xD;
+- Docker Hub (public &amp;amp; private repositories)</Overview>
+  <Category>HomeAutomation: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://i.imgur.com/eIUvk2Y.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1672960349</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Port" Target="3000" Default="3000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="Data" Target="/store" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTT Server" Target="WUD_TRIGGER_MQTT_mqtt_URL" Default="" Mode="" Description="Example: mqtt://127.0.0.1:1883" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTT Username" Target="WUD_TRIGGER_MQTT_mqtt_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="MQTT Password" Target="WUD_TRIGGER_MQTT_mqtt_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="Home Assistant Auto Discovery" Target="WUD_TRIGGER_MQTT_HA_HASS_ENABLED" Default="false" Mode="" Description="If you want to enabled Home Assistant Auto Discovery set this to True" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="Home Assistant Auto Discovery Prefix" Target="WUD_TRIGGER_MQTT_HA_HASS_PREFIX" Default="homeassistant" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">homeassistant</Config>
+  <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+</Container>
